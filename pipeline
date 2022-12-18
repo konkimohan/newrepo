@@ -47,14 +47,7 @@ pipeline {
 		        echo "deploying the .war file into the tomcat server"
 		        deploy adapters: [tomcat9(credentialsId: 'tomcat-server', path: '', url: 'http://65.0.176.207:8080/')], contextPath: 'webapps', war: 'target/*.war'
 		    }
-		}
-		
-		stage('post integration test cases') {
-			step {
-				echo "post integration test cases"
-				sh "mvn clean verify"
-			}
-		}
+               }
 	}
 }
 
