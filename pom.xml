@@ -19,24 +19,6 @@
   <build>
     <finalName>webapp</finalName>
   </build>
-    <profiles>
-      <groupId>org.sonarsource.scanner.maven</groupId>
-  <artifactId>sonar-maven-plugin</artifactId>
-  <version>3.2</version>
-<profile>
-<id>sonar</id>
-<activation>
-<activeByDefault>true</activeByDefault>
-</activation>
-<properties>
-<!-- Optional URL to server. Default value is http://localhost:9000 -->
-<sonar.host.url>
-http://3.110.148.83:9000
-</sonar.host.url>
-</properties>
-</profile>
-</profiles>
-
 
   <distributionManagement>
     <repository>
